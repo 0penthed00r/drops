@@ -1,30 +1,20 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <title>Secret Drop</title>
+  <title>Drop Segreto</title>
   <script>
     function checkPassword() {
-      const pw = prompt("Insert password:");
-      if (pw !== "youarethekey") {
-        alert("Access denied.");
-        window.location.href = "https://google.com";
+      const pw = prompt("Inserisci la password per accedere al drop:");
+      if (pw !== "tuapasswordqui") {
+        alert("Accesso negato.");
+        window.location.href = "https://google.com"; // o tua home
       }
     }
   </script>
-  <style>
-    body {
-      background-color: black;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 100px;
-    }
-  </style>
 </head>
 <body onload="checkPassword()">
-  <h1>🔓 Benvenuto al drop segreto 🔓</h1>
-  <p>La prossima location sarà: <strong>Colosseo, Roma</strong></p>
+  <h1>Benvenuto al Drop Esclusivo</h1>
+  <p>Qui troverai i contenuti segreti del drop!</p>
 </body>
 </html>
